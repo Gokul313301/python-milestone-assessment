@@ -63,8 +63,13 @@ class Student:
 so=Student()
 so.add_student(1, "Alice", 14, 23, 35)
 so.add_student(2, "Bob", 78, 82, 88)
-print("===== Student Result: ===== \n\n" + so.student_result(1))
-print(so.student_result(2))
+so.add_student(3, "Charlie", 45, 55, 65)
+so.add_student(4, "David", 90, 92, 95)
+# print("===== Student Result: ===== \n\n" + so.student_result(1))
+# print(so.student_result(2))
+print("===== Student Result: ===== \n")
+for s in so.Students.keys():
+    print(so.student_result(s))
 print("Highest Scoring Student: " + str(so.calculate_highest_average()))
 print("Students with average above 75: " + str(so.print_students_with_average_above_75()))
 
