@@ -22,7 +22,7 @@ class Student:
         elif average_score >= 20:
             return "D"
         else:
-            return "F"
+            return "F" 
     def student_result(self, id):
         if id in self.Students:
             student = self.Students[id]
